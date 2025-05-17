@@ -27,10 +27,14 @@ apply plugin: 'kotlin-android'
 android {
     namespace 'ru.innim.flutter_login_vk'
 
-    compileSdk 31
+    compileSdk 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
     }
 
     compileOptions {
